@@ -1,36 +1,6 @@
 function SendMail() {
     try {
-        var mailId = document.getElementById("ctl00_MainContentHolder_hdnMailId").value;
-        var description = "Description";
-        var modaldiv = creteElem("div", "modal");
-        var modalBackground = creteElem("div", "modalBackground");
-
-        var bd = document.getElementsByTagName("BODY")[0];
-
-        bd.appendChild(modalBackground);
-        bd.appendChild(modaldiv);
-        var _cmpName = '';
-        if (modaldiv) {
-            modaldiv.className = "modaldiv";
-            modalBackground.className = "modalBackground";
-
-            //var sb = new Sys.StringBuilder(this._headTagStart);
-            var sb = new Sys.StringBuilder("");
-            sb.append("<div class='omniModalHeader'>");
-            sb.append("<img src='images/Omnibus-logo-trans-small.png' alt='OmnibusCloud | Login' /></div>");
-            sb.append("<div class='omniModalBody' id='ModalBodyDiv'>");
-            sb.append("<p class='hgutter'></p><p class='innerText'>Send mail to <input type='text' value='" + mailId + "' id='MailTxt'></input><br/><span id='ValidationTxt' style='color: red; display:block'></span></p>");
-            sb.append("</div>");
-            sb.append("<DIV style='text-align:right;padding:10px;' id='YesNoBtnDiv'><p><input type='button' class='btn btn-primary' value='Yes' id='YesBtn' onclick='SendMailRequest(true,\"" + mailId + "\")'>");
-            sb.append("<input type='button' class='btn btn-primary' value='No' id='NoBtn' onclick='SendMailRequest(false,\"" + mailId + "\")'></p></DIV>");
-
-            modaldiv.innerHTML = sb.toString();
-
-            modaldiv.style.display = modalBackground.style.display = "block";
-            modaldiv.style.width = "400px";
-
-            SetPosition(modaldiv);
-            SetHeightWidth(modaldiv);
+       
 
             modalBackground.style.height = (document.documentElement.scrollHeight + 5) + "px";
 
