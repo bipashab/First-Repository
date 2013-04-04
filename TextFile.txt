@@ -1,1 +1,23 @@
+<<<<<<< HEAD
 rfdetfrgdtgtgtgtgtgtgtgtgtgtgtg
+=======
+function SendMail() {
+    try {
+       
+
+            modalBackground.style.height = (document.documentElement.scrollHeight + 5) + "px";
+
+            if (document.all) {
+                modaldiv.style.height = (modaldiv.clientHeight - 5) + "px";
+            }
+
+
+        }
+    }
+    catch (e) {
+        //LogFunctionError(e.name + ":" + e.message);
+    }
+}
+
+
+>>>>>>> 50a6a0cbb5079fafaf2626ff9a5986e71603d9d5
